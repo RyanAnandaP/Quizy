@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useEffect } from "react";
 import QUESTIONS from "../Questions.jsx";
 import QuestionsBoard from "./QuestionsBoard.jsx";
 import Summary from "./Summary.jsx";

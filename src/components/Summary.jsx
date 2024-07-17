@@ -34,12 +34,12 @@ const Summary = ({ userAnswers }) => {
         </p>
 
         <p>
-          <span className="number">{correctAnswersShare}%</span>
+          <span id="summary-answer-correct">{correctAnswersShare}%</span>
           <span className="text">Answer Correctly</span>
         </p>
 
         <p>
-          <span className="number red">{wrongAnswerShare}%</span>
+          <span id="summary-answer-incorrect">{wrongAnswerShare}%</span>
           <span className="text">Answer Incorrectly</span>
         </p>
       </div>
@@ -49,9 +49,9 @@ const Summary = ({ userAnswers }) => {
           if (ans === null) {
             answerStyling = " text-white font-normal";
           } else if (ans === QUESTIONS[index].answers[0]) {
-            answerStyling = " text-green-800";
+            answerStyling = " text-[#0dd60d]";
           } else {
-            answerStyling = " text-red-800";
+            answerStyling = " text-[#b10303]";
           }
 
           return (
